@@ -11,22 +11,26 @@
     <div class="love-letter">
         <h1>Dear Ishika,</h1>
         <p>
-            From the moment you walked into my life, everything changed. Your smile brightens my days,
-            your laughter is the sweetest melody, and your kindness warms my heart like the first rays of sunrise.
-            Every moment with you feels magical, and every thought of you fills my heart with joy.
+            From the moment you walked into my life, everything changed. Your smile brightens my days, your laughter is the sweetest melody, and your kindness warms my heart like the first rays of sunrise. Every moment with you feels magical, and every thought of you fills my heart with joy.And whenever I feel low, I listen to the voice notes you sent me—it instantly lifts my mood and makes me feel closer to you. Your voice is my little escape, my comfort, my happiness. 💞
         </p>
         <p>
-            I want to walk beside you in this journey of life, cherish every moment, and make countless memories together.
-            You are my little princess, my darling, my sweet angel, and my everything. I love you beyond words, and today,
-            on this special day, I just want to ask… will you be mine forever? ❤️
+            I want to walk beside you in this journey of life, cherish every moment, and make countless memories together. You are my little princess, my darling, my sweet angel, and my everything.
         </p>
+        <p>
+            I want to travel the world with you, explore new places hand in hand, and create stories that will last a lifetime. I love you so much that words can’t even express it, but trust me, I will never let you feel low. I’ll make sure every moment of your life with me is filled with joy and happiness. While building this website and writing this letter, I literally felt tears because every word, every thought, came straight from my heart.
+        </p>
+        <p>
+            Whenever I see your mentions in my story, I feel like the luckiest guy ever. It makes me feel like you’re already mine—my wife, my girl, my princess… my everything. I never want to let you go from my life
+        </p>
+        <p>And today, on this special day, I just want to ask… will you be mine forever? ❤️</p>
         <p>
             With all my heart,
             <br>
             Yours always, Chakravarthi
         </p>
     </div>
-    <button onclick="goBack()">⬅️ Back</button>
+    <button class="back-button" onclick="goBack()">⬅️ Back</button>
+
     
     <script>
         function goBack() {
@@ -37,18 +41,75 @@
 </html>
 
 <style>
-    body {
-        background: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/romantic-love-date-at-sunset-free-photo.jpeg?w=2210&quality=70') no-repeat center center/cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        flex-direction: column;
-        font-family: 'Poppins', sans-serif;
-        overflow: hidden;
-        position: relative;
-        backdrop-filter: blur(5px);
+
+body {
+    background: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/romantic-love-date-at-sunset-free-photo.jpeg?w=2210&quality=70') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    backdrop-filter: blur(5px);
+    padding-bottom: 60px;
+    overflow-x: hidden; /* Allow vertical scrolling but prevent horizontal overflow */
+}
+
+.love-letter {
+    font-size: 20px; /* Reduced font size for better mobile fit */
+    color: #ff6b81;
+    font-weight: 600;
+    text-align: center;
+    max-width: 90%; /* Makes it responsive for mobile */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+    margin: 20px auto;
+    word-wrap: break-word;
+}
+
+.back-button {
+    position: fixed; 
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff6b81, #ff7eb3);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: all 0.3s;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: block; /* Ensures visibility */
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #ff7eb3, #ff6b81);
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 20, 147, 0.3);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .love-letter {
+        font-size: 18px; /* Adjust for smaller screens */
+        padding: 10px;
     }
+
+    .back-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+
 
     .confession, .love-letter {
         font-size: 22px;
@@ -61,6 +122,7 @@
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
         transition: transform 0.3s ease-in-out;
+        margin-bottom: 20px;
     }
     
     .hidden-message {
