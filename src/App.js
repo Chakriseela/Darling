@@ -19,9 +19,9 @@ function App() {
 
   return (
     <div>
-      <h1>Happy Valentine's Day Ishika Darling ❤️</h1>
+      <h1>Happy Valentine's Day Ishika Darling ❤️🫂🫂</h1>
       <a href="/Darling.html">
-        <button className="heart-btn">Go to Darling Page</button>
+        <button className="heart-btn">Way to my Heart❤️👆</button>
       </a>
     </div>
   );
